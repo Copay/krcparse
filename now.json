@@ -23,6 +23,15 @@
                 "Cache-Control": "s-maxage=1, stale-while-revalidate"
             },
             "dest": "/api/qq/[qq].ts?qq=$qq"
+        },{
+            "src": "/163/(?<ncm>[^/]*)",
+            "headers": {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept",
+                "Cache-Control": "s-maxage=1, stale-while-revalidate"
+            },
+            "dest": "/api/163/[163].ts?ncm=$ncm"
         }
     ]
 }

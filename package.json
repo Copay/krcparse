@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/node": "^12.12.8",
     "jsdom": "^16.7.0",
+    "NeteaseCloudMusicApi": "^4.8.10",
     "now": "^21.0.1",
     "vercel": "^23.1.2"
   }
