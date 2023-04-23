@@ -12,7 +12,6 @@ export default function nrcToArr(nrc: string) {
         lyric.end += lyric.start; //duration + startTime
         while ((match = regex[1].exec(nrcSlices[i])) !== null) {
             let node: node = { start: null, end: null, content: null };
-            console.log(match);
             [, node.start, node.end, node.content] = match.map((_, i) => {
                 if (i < 3 && i > 0) return parseInt(_);
                 return _;
